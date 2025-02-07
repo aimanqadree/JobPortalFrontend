@@ -1,4 +1,4 @@
-import "./signup.module.css"
+import styles from "./signup.module.css"
 import { useState } from "react"
 
 function Signup({setType}){
@@ -21,19 +21,19 @@ function Signup({setType}){
         e.preventDefault()
     }
     return(
-   <form onSubmit={handleSubmit}>
-    <h1>Sign up</h1>
+   <form className={styles.form} onSubmit={handleSubmit}>
+    <h1 className={styles.top}>Create an account</h1>
 
-    <label>Name</label>
-    <input type="text" onChange={(e)=>{handleChange("name",e)}} />
+    <label className={styles.labels}>Name</label>
+    <input className={styles.inputs} type="text" onChange={(e)=>{handleChange("name",e)}} />
 
-    <label>Email</label>
-    <input type="text" placeholder="aiman@gmail.com" onChange={(e)=>{handleChange("email",e)}} />
+    <label className={styles.labels}>Email</label>
+    <input  className={styles.inputs} type="text" placeholder="aiman@gmail.com" onChange={(e)=>{handleChange("email",e)}} />
 
-    <label>Password</label>
-    <input type="text"  onChange={(e)=>{handleChange("password",e)}} />
-    <button type="submit">Signup</button>
-    <p>Already have an account? <span onClick={()=>setType("signin")}>Sign in</span></p>
+    <label  className={styles.labels}>Password</label>
+    <input  className={styles.inputs} type="password"  onChange={(e)=>{handleChange("password",e)}} />
+    <button  className={styles.btn} type="submit">Signup</button>
+    <p>Already have an account? <span  className={styles.p} onClick={()=>setType("signin")}>Sign in</span></p>
 
 
    </form>

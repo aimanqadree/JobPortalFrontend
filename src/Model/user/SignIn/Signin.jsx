@@ -21,13 +21,13 @@ function SignIn({setType}){
     }
     return(
    <form className={styles.form} onSubmit={handleSubmit}>
-    <h1 className={styles.top}>Sign In</h1>
+    <h1 className={styles.top}>Login to your account</h1>
 
     <label className={styles.labels}>Email</label>
     <input className={styles.inputs} type="text" placeholder="aiman@gmail.com" onChange={(e)=>{handleChange("email",e)}} />
 
     <label className={styles.labels}>Password</label>
-    <input className={styles.inputs} type="text"  onChange={(e)=>{handleChange("password",e)}} />
+    <input className={styles.inputs} type="password"  onChange={(e)=>{handleChange("password",e)}} />
     <button className={styles.btn} type="submit">Login</button>
     <p>Don't have an account? <span className={styles.p} onClick={()=>setType("signup")}>Sign Up</span></p>
 

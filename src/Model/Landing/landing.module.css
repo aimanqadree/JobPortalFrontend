@@ -1,0 +1,78 @@
+                 /* Hero */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/depository-secretary-discovering-management-files-working-overhours-accountancy-report-storage-room-businesswoman-reading-bureaucracy-record-analyzing-administrative-documents_482257-62931.jpg?t=st=1738924461~exp=1738928061~hmac=d932a53a954e574072d2a719982fa711b36068275b525e3ccfbbcd087b40924e&w=1380");
+    background-size: cover;
+    padding-top: 150px;
+    padding-left: 10%;
+    font-family: 'Poppins', serif;
+}
+
+.box {
+    display: flex;
+
+    flex-direction: column;
+    color: white;
+    width: 35%;
+    gap: 30px;
+
+}
+
+.parah2 {
+    font-size: 2rem;
+}
+
+
+.btn {
+    border: 2px solid rgb(58, 122, 100);
+    height: 40px;
+    width: 120px;
+    background-color: rgb(58, 122, 100);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(39, 84, 70);
+    border: 2px solid rgb(39, 84, 70);
+    transition: 1s;
+}
+
+
+
+
+                 /* Footer */
+
+.container2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 30vh;
+}
+
+.Creator {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+    cursor: pointer;
+}
+.list li:hover{
+    text-decoration: underline;
+}
+
+.contact:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
