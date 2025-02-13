@@ -12,7 +12,6 @@
 
 .box {
     display: flex;
-
     flex-direction: column;
     color: white;
     width: 35%;
@@ -110,7 +109,67 @@
     font-size: 13px;
  } 
  .h4review{
-    /* font-style: italic; */
     font-family: "Dancing Script", serif;
     font-size: 20px;
+ }
+
+
+
+
+                /* Description */
+.topdescription{
+    height: 80vh;
+    background-color: rgb(244, 239, 239);
+    padding: 30px;
+}
+.headingdescription{
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+    line-height: 10px;
+    font-family: "Poppins",serif;
+ }         
+ .paradescription{
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    color:  rgb(57, 56, 56);
+    font-size: 20px;
+    font-family: "Poppins",serif;
+ }
+ .insidedescription{
+    color: rgb(58, 122, 100) ;
+ }
+ .parentdescription{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 80%;
+    margin: auto;
+ }  
+ .boxdescription{
+    font-family: "Poppins",serif;
+    border: 1px solid rgb(218, 210, 210);
+    height: 40vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    
+ } 
+ .top2description{
+    font-size: 30px;
+ }   
+ .para2description{
+font-size: 13px;
+color: rgb(57, 56, 56);
+ }
+ .icon1{
+    font-size: 50px;
+    color:  rgb(58, 122, 100);
  }
