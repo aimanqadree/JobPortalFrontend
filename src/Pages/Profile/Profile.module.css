@@ -1,7 +1,7 @@
     /* first section */
 
 .main {
-    height: 200vh;
+    height: 300vh;
     background-color: rgb(235, 231, 231);
     padding-top: 15px;
 }
@@ -82,33 +82,83 @@
 
 
 
-       /* second sectio */
+       /* second section */
  .boxes{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        font-size: 15px;
- }
- .headingh2{
-    /* margin-bottom: 40px; */
-    /* margin-top: 20px; */
+    font-size: 15px;
+    background-color: white;
+    width: 180px;
+    height: 40px;
+    margin: auto;
+    padding-left: 10px;
  }
  .secondcontainer{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 15vw;
-    height: 80vh;
-    padding-left: 20px;
-    margin-left: 245px;
+    height: 90vh;
+    gap:10px;
     border-radius: 10px ;
     font-family: "Poppins", serif;
+    padding: 10px 0;
+    margin-left: 250px;
  }
  .boxes:hover{
-    border: 1px solid hsl(0, 10%, 88%);
     background-color:  hsl(0, 10%, 88%);
     color: black;
-    /* width: 130px; */
     cursor: pointer;
-    width: 140px;
-    height: 30px;
     border-radius: 5px;
  }
+ .heading2{
+     text-align: center;
+ }
+
+       
+            /* 3rd section */
+.thirdcontainer{
+    background-color: white;
+    height: 35vh;
+    width: 50vw;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 500px;
+    margin-bottom: 600px;
+}    
+.thirdh2{
+    margin-top: 5px;
+}
+.thirdh3p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    gap: 10px;
+    line-height: 1;
+}
+.thirdh3{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+}
+.logo1{
+    background-color: rgb(233, 223, 223);
+    color: rgb(84, 84, 146);;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    padding: 7px;
+}
+
+.uploadbox{
+    display: block;
+    border: 1px solid  rgb(84, 84, 146);
+    color: rgb(84, 84, 146);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    height: 30px;
+    width: 130px;
+    padding: 5px;
+}

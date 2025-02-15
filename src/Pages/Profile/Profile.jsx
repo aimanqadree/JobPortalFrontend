@@ -8,6 +8,8 @@ import { PiSuitcaseSimple } from "react-icons/pi";
 import { MdMailOutline } from "react-icons/md";
 import { CiWallet } from "react-icons/ci";
 import { RxPencil1 } from "react-icons/rx";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 function Profile() {
   return (
@@ -43,11 +45,12 @@ function Profile() {
       </div>
     </div>
     <New/>
+    <Resume/>
     </div>
   )
 }
 export default Profile
-
+                    // second section
 function New(){
   const object = [
     {
@@ -99,16 +102,42 @@ function New(){
   return(
     <div className= {styles.secondcontainer}>
     <h2 className={styles.heading2}>Quick Links</h2>
-    <div>
+
         {
           object.map((item,index)=>(
             <div className={styles.boxes} key={index}>{item.name}</div>
           ))
         }
-    </div>
+
     </div>
   )
 }
 
+                    //  3rd section
 
+function Resume(){
+  return(
+    <div className={styles.thirdcontainer}>
+      <div>
+        <h2 className={styles.thirdh2}>Resume</h2>
+        <div className={styles.thirdh3}>
+          <div className={styles.thirdh3p}>
+        <h3>Aiman_Jan_Resume.pdf</h3>
+        <p>Uploaded on February 15, 2025</p>
+        </div>
+        <div className={styles.logo}>
+        <MdOutlineFileDownload  className={styles.logo1}/>      
+        <RiDeleteBinLine  className={styles.logo1}/>
+
+        </div>
+        </div>
+      </div>
+      <div>
+        <label className={styles.uploadbox}>Update resume</label>
+        <p>Supported Formats: doc, docx, rtf,pdf,upto 2MB</p>
+       <input type="file" name="" id="" />
+      </div>
+    </div>
+  )
+}                    
 
