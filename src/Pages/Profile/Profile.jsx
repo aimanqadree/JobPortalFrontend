@@ -44,8 +44,16 @@ function Profile() {
         </div>
       </div>
     </div>
+
+    <div className={styles.resumeandSideBarSection}>
     <New/>
+    <div className={styles.Resumeheadline1}>
     <Resume/>
+    <Resumeheadline/>
+    <KeySkills/>
+    </div>
+
+    </div>
     </div>
   )
 }
@@ -132,7 +140,8 @@ function Resume(){
         </div>
         </div>
       </div>
-      <div>
+
+      <div className={styles.fileInputBox}>
         <label className={styles.uploadbox}>Update resume</label>
         <p>Supported Formats: doc, docx, rtf,pdf,upto 2MB</p>
        <input type="file" name="" id="" />
@@ -141,3 +150,56 @@ function Resume(){
   )
 }                    
 
+
+      // 4th section
+ function Resumeheadline(){
+  return(
+         <div className={styles.container4}>
+          <h2 className={styles.container4h4}>Resume Headline <RxPencil1 className={styles.headinglogue} /></h2>
+          <p>I'm Aiman Jan Currently Pursuing Computer Science and Engineering from Ram Devi Jindal Group of Institutions enthusiatic about web development. I have learnt relevant skills (HtML, CSS, Bootstrap, JavaScript, React) for development and eager to contribute to gain experience.</p>
+         </div>
+  )
+ }   
+ 
+  
+          //  5th section
+function KeySkills(){
+  const skills = [
+    {
+      name:"HTML",
+      link: "#"
+    },
+    {
+      name:"CSS",
+      link: "#"
+    },
+    {
+      name:"Bootstrap",
+      link: "#"
+    },
+    {
+      name:"Javascript",
+      link: "#"
+    },
+    {
+      name:"React",
+      link: "#"
+    },
+    {
+      name:"Tailwind",
+      link: "#"
+    }
+  ]
+  return(
+    <div className={styles.container5h4}>
+      <h2>Key skills<RxPencil1 className={styles.headinglogue} /></h2>
+    <div className={styles.btn5}>
+      {
+          skills.map((item,index)=>(
+            <button className={styles.skills5} key={index}>{item.name}</button>
+          ))
+        }
+        </div>
+    </div>
+  )
+}          
